@@ -16,6 +16,7 @@ const defaultImages = [
 
 //the endpoint for images processing
 imageProcess.get('/', async (req: Request, res: Response): Promise<void | unknown> => {
+  //creates the directory for the resized images if not found already
   if (!fs.existsSync('./images/resized')) {
     fs.mkdir('./images/resized', (err) => {
       if (err) throw err;
