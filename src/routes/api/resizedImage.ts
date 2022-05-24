@@ -12,6 +12,7 @@ const defaultImages = [
   'santamonica',
 ];
 
+//the endpoint that shows the processed images
 resizedImage.get(
   '/',
   async (req: Request, res: Response): Promise<void | unknown> => {
