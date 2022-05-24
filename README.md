@@ -19,8 +19,9 @@ an Image Processing API Project for UDACITY. built using TypeScript, NodeJS & Ex
 5. to show a resized image use /api/resizedimage?image=<image name>&height=<image height>&width=<image height>
 
 ## Examples
-
-- http://localhost:8080/api/api?image=fjord
+  
+- http://localhost:8080/
+- http://localhost:8080/api?image=fjord
 - http://localhost:8080/api/imageprocess?image=fjord&width=150&height=200
 - http://localhost:8080/api/resizedimage?image=fjord&width=150&height=200
 
