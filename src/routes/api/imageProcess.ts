@@ -14,6 +14,7 @@ const defaultImages = [
   'santamonica',
 ];
 
+//the endpoint for images processing
 imageProcess.get('/', async (req: Request, res: Response): Promise<void | unknown> => {
   if (!fs.existsSync('./images/resized')) {
     fs.mkdir('./images/resized', (err) => {
